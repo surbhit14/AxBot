@@ -41,10 +41,12 @@ Community-Centric Additions: Given Discord's community-driven nature, AxBot coul
 In summation, AxBot, powered by Axelar’s General Message Passing, isn't merely a tool—it's a monumental leap in making blockchain interactions intuitive and accessible. By synergizing the widespread familiarity of Discord with cutting-edge blockchain technology, AxBot is redefining the boundaries of what's possible in the realm of cross-chain transactions.
 
 2 positive or negative experiences ywith learning and using Axelar
+
 Positive:
 1.Sending funds cross chain is revolutionary, without writing a lot of code, I was able to integrate services provided by axelar quickly
 2.Axelar documentation is well written, all gateaway addresses were available in one place
 
-Negative
+Negative:
+
 1.Transaction can take a lot of time to complete, sometimes even 30 minutes, hard to develop when it takes 30 minutes for each transaction, also not a good thing considering fund transfer will take so much time on mainnet as well
 2.Limited number of chains and tokens supported
