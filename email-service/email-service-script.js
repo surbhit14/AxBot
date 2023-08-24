@@ -36,6 +36,10 @@ const transporter = nodemailer.createTransport({
     },
 });
 
+app.get('/', (req, res) => {
+  res.send('Welcome!')
+})
+
 app.post("/send-emails", (req, res) => {
     const recipients = req.body;
 
