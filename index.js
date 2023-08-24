@@ -701,12 +701,12 @@ const ERC20TokenAddressesByChain = {
 const COMMANDS = {
     '$deposit': 'Deposit tokens into the discord bot for future use on our website.',
     '$register': 'Link your discord account with your wallet on our website.',
-    '$transfer address': 'Transfer tokens to a specified address. Usage: $transfer address [amount] [tokenSymbol] [toAddress] [senderChain] [receiverChain] (optionalEmail)',
+    '$transfer address': 'Transfer tokens to a specified address. Usage: $transfer address [amount] [tokenSymbol] [toAddress] [senderChain] [receiverChain]',
     '$transfer username': 'Transfer tokens to a Discord user\'s registered address. Usage: $transfer username [amount] [tokenSymbol] [toUsername] [senderChain] [receiverChain] (optionalEmail)',
-  '$bridge': 'Bridge tokens between chains. Usage: $bridge [amount] [tokenSymbol] [fromChain] [toChain]',
+  '$bridge': 'Bridge tokens between chains. Usage: $bridge [amount] [tokenSymbol] [srcChain][destChain]',
    '$getSentPayments [chain]': 'Retrieve the top 5 payments sent by the user on the specified chain',
    '$getReceivedPayments [chain]': 'Retrieve the top 5 payments received by the user on the specified chain',
-  '$help': 'Displays this help message.'
+    '$help': 'Displays all the commands available.'
 };
 
 client.on("messageCreate",async (msg) => {
