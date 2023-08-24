@@ -1,29 +1,8 @@
 import Head from "next/head";
 import Layout from "@/components/Utilities/Layout";
-import { useState } from "react";
-import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
+import { useState, useEffect } from "react";
 
 export default function Landing() {
-  const supabase = createClientComponentClient();
-  const [userData, setUserData] = useState<any>(null);
-
-  async function signInWithDiscord() {
-    const { data, error } = await supabase.auth.signInWithOAuth({
-      provider: "discord",
-    });
-
-    if (error) {
-      console.log(error);
-      return;
-    }
-    console.log(data);
-    setUserData(data);
-  }
-
-  async function signout() {
-    const { error } = await supabase.auth.signOut();
-  }
-
   return (
     <>
       <Head>
@@ -48,7 +27,7 @@ export default function Landing() {
         <div className="dark:bg-slate-900 bg-white dark:text-slate-200">
           <div className="relative isolate px-6 pt-14 lg:px-8">
             <div
-              className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+              className="absolute inset-x-0 transform-gpu overflow-hidden blur-3xl "
               aria-hidden="true"
             >
               <div
@@ -67,16 +46,13 @@ export default function Landing() {
               </div>
               <div className="text-center">
                 <h1 className="text-4xl font-bold tracking-tight dark:text-slate-200 text-gray-900 sm:text-6xl">
-                  Make multi-chain bulk payments with ease!
+                  Discord Bot Wallets
                 </h1>
                 <p className="mt-6 text-lg leading-8 dark:text-slate-200 text-gray-600">
                   Powered by Axelar
                 </p>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
-                  <button
-                    onClick={signInWithDiscord}
-                    className="rounded-md  bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold  text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                  >
+                  <button className="rounded-md  bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold  text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                     Get started
                   </button>
                   <a
