@@ -11,7 +11,7 @@
     "dotenv": "^10.0.0"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "node email-service-script.js"
   },
   "author": "Axbot developers",
   "license": "ISC"
