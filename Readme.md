@@ -60,5 +60,5 @@ In summation, AxBot, powered by Axelar’s General Message Passing, isn't merely
 2.Axelar documentation is well written, all gateaway addresses were available in one place
 
 # Negative:
-1.Transaction can take a lot of time to complete, sometimes even 30 minutes, hard to develop when it takes 30 minutes for each transaction, also not a good thing considering fund transfer will take so much time on mainnet as well
+1.Few of the transactions can take some time to complete which sometimes makes the development and testing harder
 2.Limited number of chains and tokens supported
